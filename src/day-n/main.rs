@@ -1,22 +1,23 @@
 use crate::InputType;
-use std::fs;
 
 pub fn part1(input_type: InputType) -> String {
-    let input = match input_type {
-        InputType::Example => fs::read_to_string("src/day-1/example.txt").unwrap(),
-        InputType::Real => fs::read_to_string("src/day-1/data.txt").unwrap(),
+    println!("Day n part 1");
+    let input_path = match input_type {
+        InputType::Example => "src/day-1/example.txt",
+        InputType::Real => "src/day-1/data.txt",
     };
 
-    input
+    input_path.to_string()
 }
 
 pub fn part2(input_type: InputType) -> String {
-    let input = match input_type {
-        InputType::Example => fs::read_to_string("src/day-1/example.txt").unwrap(),
-        InputType::Real => fs::read_to_string("src/day-1/data.txt").unwrap(),
+    println!("Day n part 2");
+    let input_path = match input_type {
+        InputType::Example => "src/day-1/example.txt",
+        InputType::Real => "src/day-1/data.txt",
     };
 
-    input
+    input_path.to_string()
 }
 
 #[cfg(test)]
