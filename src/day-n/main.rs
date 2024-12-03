@@ -3,8 +3,8 @@ use crate::InputType;
 pub fn part1(input_type: InputType) -> String {
     println!("Day n part 1");
     let input_path = match input_type {
-        InputType::Example => "src/day-1/example.txt",
-        InputType::Real => "src/day-1/data.txt",
+        InputType::Example => "src/day-n/example.txt",
+        InputType::Real => "src/day-n/data.txt",
     };
 
     input_path.to_string()
@@ -13,8 +13,8 @@ pub fn part1(input_type: InputType) -> String {
 pub fn part2(input_type: InputType) -> String {
     println!("Day n part 2");
     let input_path = match input_type {
-        InputType::Example => "src/day-1/example.txt",
-        InputType::Real => "src/day-1/data.txt",
+        InputType::Example => "src/day-n/example.txt",
+        InputType::Real => "src/day-n/data.txt",
     };
 
     input_path.to_string()

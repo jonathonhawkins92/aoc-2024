@@ -2,6 +2,8 @@ use clap::{Parser, ValueEnum};
 use std::error::Error;
 #[path = "day-1/main.rs"]
 mod day1;
+#[path = "day-2/main.rs"]
+mod day2;
 
 #[derive(Clone, ValueEnum, Debug)]
 enum InputType {
@@ -32,6 +34,8 @@ macro_rules! run_day {
         match ($day, $part) {
             (1, 1) => day1::part1($input_type),
             (1, 2) => day1::part2($input_type),
+            (2, 1) => day2::part1($input_type),
+            (2, 2) => day2::part2($input_type),
             // Add more days as needed
             _ => "Day not implemented".to_string(),
         }
